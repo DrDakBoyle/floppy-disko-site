@@ -74,13 +74,13 @@ img, svg { max-width: 100%; display: block; }
 }
 
 .intro h1 {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: bold;
   margin: 0 0 16px;
 }
 
 .intro p {
-  font-size: 15px;
+  font-size: 24px;
   line-height: 1.7;
   color: #666;
   margin: 0 0 12px;
@@ -92,13 +92,13 @@ img, svg { max-width: 100%; display: block; }
 }
 
 .page-header h1 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
 }
 
 .page-header p {
-  font-size: 15px;
+  font-size: 20px;
   color: #666;
   margin: 0;
   max-width: 540px;
