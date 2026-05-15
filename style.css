@@ -1,0 +1,290 @@
+/* Floppy Disko - shared styles */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+@media (max-width: 600px) {
+  body { padding: 20px 16px 48px; }
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { opacity: 0.6; }
+
+img, svg { max-width: 100%; display: block; }
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 13px;
+}
+
+.nav-links a { color: #666; }
+.nav-links a.active { color: #111; }
+
+@media (max-width: 600px) {
+  .nav-links { gap: 16px; font-size: 12px; }
+}
+
+/* Section labels */
+.section-label {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #999;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+}
+
+/* Intro block (centered, narrow) */
+.intro {
+  max-width: 480px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.intro p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0 0 12px;
+}
+
+/* Page header (inner pages) */
+.page-header {
+  margin-bottom: 64px;
+}
+
+.page-header h1 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.page-header p {
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+  max-width: 540px;
+}
+
+/* Hero (homepage) */
+.hero {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.hero img {
+  max-width: 100%;
+  max-height: 480px;
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .hero { min-height: 240px; margin-bottom: 56px; }
+  .hero img { max-height: 320px; }
+}
+
+/* Poster / image grids */
+.grid {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 80px;
+}
+
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 700px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 400px) {
+  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+}
+
+.poster {
+  aspect-ratio: 3/4;
+  background: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+  color: #999;
+  font-size: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.poster img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster-label {
+  position: relative;
+  z-index: 1;
+}
+
+/* Artist cards */
+.artist {
+  margin-bottom: 24px;
+}
+
+.artist-photo {
+  aspect-ratio: 1;
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.artist-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 2px;
+}
+
+.artist-role {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+/* Credits list */
+.credits {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 8px 32px;
+  max-width: 540px;
+  margin: 0 auto 80px;
+  font-size: 14px;
+}
+
+.credit-year {
+  color: #999;
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+.credit-venue {
+  color: #111;
+}
+
+/* Body prose */
+.prose {
+  max-width: 600px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.prose p {
+  margin: 0 0 20px;
+}
+
+.prose h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 32px 0 12px;
+}
+
+.prose a {
+  color: #111;
+  text-decoration: underline;
+  text-decoration-color: #999;
+  text-underline-offset: 3px;
+}
+
+/* Booking specifics */
+.contact-block {
+  margin: 32px 0;
+  padding: 24px 0;
+  border-top: 0.5px solid #e5e5e5;
+  border-bottom: 0.5px solid #e5e5e5;
+}
+
+.contact-block dt {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.contact-block dd {
+  margin: 0 0 16px;
+  font-size: 15px;
+}
+
+.contact-block dd:last-child { margin-bottom: 0; }
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  border-top: 0.5px solid #e5e5e5;
+  font-size: 12px;
+  color: #999;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+}
+
+.social a { color: #666; }
