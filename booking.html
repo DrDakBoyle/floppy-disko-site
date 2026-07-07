@@ -8,11 +8,12 @@
   <link rel="icon" type="image/svg+xml" href="/images/Logo(Purple).svg" />
   <link rel="stylesheet" href="/style.css" />
 </head>
-<body>
+<body class="centered-page">
   <nav class="nav">
     <a href="/" class="logo">FLOPPY DISKO</a>
     <div class="nav-links">
-      <a href="/who-we-are.html">Who We Are</a>
+      <a href="/about-us.html">About Us</a>
+      <a href="/sound.html">Sound</a>
       <a href="/artists.html">Artists</a>
       <a href="/booking.html" class="active">Booking</a>
       <a href="https://floppydisko.bandcamp.com" target="_blank" rel="noopener">Shop</a>
@@ -25,11 +26,11 @@
   </header>
 
   <article class="prose">
-    <p>We've played Bonnaroo, ACL (Hacienda Tent), SXSW (Neon Grotto), Kingdom Nightclub, Jupiter Disco Brooklyn, Sable Miami, Marlow, and Cosmic Pickle, among others. Set length, lineup size, and energy curve are all negotiable — we'll build the room to fit the room.</p>
+    <p>We can bring our own sound and equipment when needed. Set length, lineup size, energy curve — everything's negotiable, we'll build the room to fit the room.</p>
 
     <p>For the fastest response, email with: date, venue, expected attendance, set length, and budget range.</p>
 
-    <dl class="contact-block">
+    <dl class="contact-block contact-block-centered">
       <dt>Booking inquiries</dt>
       <dd><a href="mailto:info@floppydisko.com">info@floppydisko.com</a></dd>
 
@@ -42,6 +43,30 @@
       <dt>Listen</dt>
       <dd><a href="https://soundcloud.com/floppy_disko" target="_blank" rel="noopener">soundcloud.com/floppy_disko</a></dd>
     </dl>
+  </article>
+
+  <article class="prose contact-form-wrap">
+    <h2 style="text-align:center;">Send us a message</h2>
+    <form
+      name="booking-contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="contact-form">
+      <input type="hidden" name="form-name" value="booking-contact" />
+      <p class="hidden-field"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
   </article>
 
   <footer class="footer" style="margin-top: 80px;">
