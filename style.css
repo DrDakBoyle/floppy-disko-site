@@ -476,6 +476,20 @@ img, svg { max-width: 100%; display: block; }
   text-align: center;
 }
 
+.upcoming-events-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 16px auto 48px;
+}
+
+.upcoming-events-row .upcoming-event {
+  margin: 0;
+  flex: 1 1 320px;
+  max-width: 360px;
+}
+
 .upcoming-event-title {
   font-size: 16px;
   font-weight: 500;
