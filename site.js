@@ -1,5 +1,5 @@
-/* Floppy Disko — builds the event and media sections from the lists in /data/.
-   You should not need to edit this file. Edit /data/events.js and /data/media.js. */
+/* Floppy Disko — builds the event and media sections from the lists in the site root.
+   You should not need to edit this file. Edit /events.js and /media.js. */
 (function () {
   "use strict";
 
