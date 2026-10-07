@@ -20,6 +20,7 @@
       <a href="/about-us.html">About Us</a>
       <a href="/sound.html">Sound</a>
       <!-- <a href="/artists.html">Artists</a> -->
+      <!-- <a href="/media.html">Media</a> -->
       <a href="/booking.html">Booking</a>
       <a href="https://floppydisko.bandcamp.com" target="_blank" rel="noopener">Shop</a>
     </div>
@@ -29,37 +30,16 @@
     <img src="/images/motto.png" alt="Floppy Disko" />
   </div>
   
+  <!-- Upcoming Events and Event History are built from /data/events.js.
+       To add or change an event, edit that file only. Events move from
+       Upcoming to Event History on their own once the date has passed. -->
   <p class="section-label" style="text-align:center; margin-top:24px;">Upcoming Events</p>
-  <div class="upcoming-events-row">
-    <div class="upcoming-event">
-      <p class="upcoming-event-title">Floppy Disko Presents: Farewell to Marlow — DRØ, Hubbble, Kiwi</p>
-      <img src="/images/posters/260814-farewell-to-marlow.png" alt="Floppy Disko Presents Farewell to Marlow with DRØ, Hubbble, Kiwi, Friday August 14th 2026, 9PM to 1AM" class="upcoming-event-flyer" onerror="this.style.display='none'" />
-      <p class="upcoming-event-venue">Marlow · August 14th · 9PM–1AM · Austin, TX</p>
-    </div>
-    <div class="upcoming-event">
-      <p class="upcoming-event-title">Disco Disko Disco: Secret Secret Disco — Secret Lineup</p>
-      <img src="/images/posters/260815-secret-secret-disco.png" alt="Disco Disko Disco presents Secret Secret Disco, secret lineup, Saturday August 15th 2026, 10PM to Late, 4319 Terry-O Lane" class="upcoming-event-flyer" onerror="this.style.display='none'" />
-      <p class="upcoming-event-venue">4319 Terry-O Lane · August 15th · 10PM–Late · Austin, TX</p>
-    </div>
-  </div>
+  <div class="upcoming-events-row" id="upcoming-events"></div>
+  <noscript><p style="text-align:center;">Follow <a href="https://instagram.com/floppy_disko">@floppy_disko</a> for upcoming events.</p></noscript>
 
   <p class="section-label">Event History</p>
-  <div class="poster-carousel">
-    <div class="poster"><img src="/images/posters/260808-kitty-cohens.png" alt="Floppy Disko Presents Hubbble, Dr. Dak, Jay Theret at Kitty Cohen's" onerror="this.style.display='none'" /><span class="poster-label">Kitty Cohen's · Aug 2026</span></div>
-    <div class="poster"><img src="/images/posters/260717-hush-hush-stardust.jpg" alt="Floppy Disko Presents Hush Hush, Brett Johnson, Jay Theret, Jagdaddy at Stardust Garage" onerror="this.style.display='none'" /><span class="poster-label">Stardust Garage · Jul 2026</span></div>
-    <div class="poster"><img src="/images/posters/260604-east-end-first-thursday.png" alt="First Thursday at East End Ballroom" onerror="this.style.display='none'" /><span class="poster-label">East End · Jun 2026</span></div>
-    <div class="poster"><img src="/images/posters/260321-marlow-dak-hubbble.png" alt="Dr. Dak and Hubbble at Marlow" onerror="this.style.display='none'" /><span class="poster-label">Marlow · Mar 2026</span></div>
-    <div class="poster"><img src="/images/posters/260315-SXSW-NeonGrotto.jpg" alt="SXSW Showcase" onerror="this.style.display='none'" /><span class="poster-label">SXSW Neon Grotto · Mar 2026</span></div>
-    <div class="poster"><img src="/images/posters/260213-marlow-what-is-love.png" alt="What Is Love at Marlow" onerror="this.style.display='none'" /><span class="poster-label">Marlow · Feb 2026</span></div>
-    <div class="poster"><img src="/images/posters/260109-cosmic-pickle.png" alt="Cosmic Pickle" onerror="this.style.display='none'" /><span class="poster-label">Cosmic Pickle · Jan 2026</span></div>
-    <div class="poster"><img src="/images/posters/251126-flower-shop-flopsgiving.png" alt="Flopsgiving at Flower Shop" onerror="this.style.display='none'" /><span class="poster-label">Flower Shop · Nov 2025</span></div>
-    <div class="poster"><img src="/images/posters/251121-marlow-jay-theret.png" alt="Jay Theret at Marlow" onerror="this.style.display='none'" /><span class="poster-label">Marlow · Nov 2025</span></div>
-    <div class="poster"><img src="/images/posters/251116-sable-miami.png" alt="Sable Miami" onerror="this.style.display='none'" /><span class="poster-label">Sable Miami · Nov 2025</span></div>
-    <div class="poster"><img src="/images/posters/251108-pinkshark-san-antonio.png" alt="Pink Shark San Antonio" onerror="this.style.display='none'" /><span class="poster-label">Pink Shark SA · Nov 2025</span></div>
-    <div class="poster"><img src="/images/posters/ACL-25.png" alt="ACL Fest" onerror="this.style.display='none'" /><span class="poster-label">Patron Hacienda ACL · Oct 2025</span></div>
-    <div class="poster"><img src="/images/posters/Roo 25.png" alt="Bonaroo Fest" onerror="this.style.display='none'" /><span class="poster-label">Where in the Woods - Bonaroo · June 2025</span></div>
-  </div>
-  
+  <div class="poster-carousel" id="event-history"></div>
+
   <p class="section-label">Events and Parties</p>
   <h1 style="text-align: center;">Venues and Events</h1>
   <div class="credits">
@@ -87,5 +67,7 @@
       <a href="https://floppydisko.bandcamp.com" target="_blank" rel="noopener">Bandcamp</a>
     </div>
   </footer>
+  <script src="/data/events.js"></script>
+  <script src="/site.js"></script>
 </body>
 </html>
